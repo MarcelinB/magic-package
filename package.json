@@ -2,13 +2,17 @@
   "name": "magic-package",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "bin/index.js",
   "type": "module",
+  "bin": {
+    "stack-starter": "./bin/index.js"
+  },
+  
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "erotique",
+  "license": "MIT",
   "dependencies": {
     "@clack/prompts": "^0.9.1",
     "chalk": "^5.4.1",
