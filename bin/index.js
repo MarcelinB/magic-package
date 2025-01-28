@@ -1,4 +1,4 @@
-import { intro, isCancel, outro, select, text } from "@clack/prompts";
+import { intro, isCancel, outro, select, text, tasks } from "@clack/prompts";
 import { setupDefaultVue } from "../stacks/vue.js";
 import { setupDefaultReact } from "../stacks/react.js";
 
@@ -28,7 +28,7 @@ if (isCancel(projectType)) {
   process.exit(0);
 }
 
-await p.tasks([
+await tasks([
   {
     title: "Installing via npm",
     task: async (message) => {
