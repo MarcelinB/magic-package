@@ -1,11 +1,11 @@
 {
-  "name": "magic-package",
+  "name": "amsk-magic-package",
   "version": "1.0.1",
   "description": "",
   "main": "bin/index.js",
   "type": "module",
   "bin": {
-    "stack-starter": "./bin/index.js"
+    "amsk-magic-package": "bin/index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -14,6 +14,7 @@
   "license": "MIT",
   "dependencies": {
     "@clack/prompts": "^0.9.1",
+    "amsk-magic-package": "^1.0.1",
     "chalk": "^5.4.1",
     "commander": "^13.1.0",
     "execa": "^9.5.2",

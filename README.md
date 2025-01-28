@@ -1,4 +1,4 @@
-# Magic-Package
+# amsk-Magic-Package
 
 The package initializes a new project using magic commands.
 
@@ -10,14 +10,10 @@ Project supported :
 ## Installation
 
 ```bash
-npm install magic-package
+npm install -g amsk-magic-package
 ```
 
-## Usage
 
-```bash
-npx magic-package
-```
 
 ## License
 

@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import { intro, isCancel, outro, select, text, tasks } from "@clack/prompts";
 import { setupDefaultVue } from "../stacks/vue.js";
 import { setupDefaultReact } from "../stacks/react.js";
