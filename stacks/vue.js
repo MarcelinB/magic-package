@@ -11,4 +11,3 @@ export function setupDefaultVue(projectName) {
   console.log(chalk.green("VueJS Projet initialized with succes 🎉"));
 }
 
-setupDefaultVue("testok");

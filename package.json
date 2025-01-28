@@ -14,7 +14,7 @@
   "license": "MIT",
   "dependencies": {
     "@clack/prompts": "^0.9.1",
-    "amsk-magic-package": "^1.0.1",
+    "amsk-magic-package": "^1.0.2",
     "chalk": "^5.4.1",
     "commander": "^13.1.0",
     "execa": "^9.5.2",
