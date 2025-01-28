@@ -4,10 +4,14 @@ import path from "path";
 import chalk from "chalk";
 
 // Fonction principale pour configurer un projet Express
-module.exports = async function setupExpress() {
-  console.log(chalk.yellow("Initialisation d'un projet Express... 🚀"));
+export async function setupExpress(folderName) {
+  console.log(chalk.yellow(`Initialisation d'un projet Express dans "${folderName}"... 🚀`));
 
-  const projectPath = process.cwd();
+  const projectPath = path.resolve(process.cwd(), folderName);
+
+  // Créer le dossier s'il n'existe pas
+  fs.ensureDirSync(projectPath);
+  process.chdir(projectPath); // Change le répertoire courant pour le dossier du projet
 
   // Étape 1 : Initialiser un package.json minimal
   console.log(chalk.blue("Création de package.json..."));
@@ -92,5 +96,5 @@ Ce projet a été généré avec Magic package. 🚀
   };
   fs.writeFileSync(packageJsonPath, JSON.stringify(packageJson, null, 2));
 
-  console.log(chalk.green("Le projet Express est prêt à l'emploi 🎉"));
-};
+  console.log(chalk.green(`Le projet Express dans "${folderName}" est prêt à l'emploi 🎉`));
+}
