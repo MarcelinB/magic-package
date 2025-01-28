@@ -1,7 +1,7 @@
-const { execSync } = require("child_process");
-const fs = require("fs-extra");
-const path = require("path");
-const chalk = require("chalk");
+import { execSync } from "child_process";
+import fs from "fs-extra";
+import path from "path";
+import chalk from "chalk";
 
 // Fonction principale pour configurer un projet Express
 module.exports = async function setupExpress() {
